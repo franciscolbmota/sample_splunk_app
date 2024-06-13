@@ -1,1 +1,0 @@
-# sample_splunk_app

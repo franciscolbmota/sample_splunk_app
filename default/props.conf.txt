@@ -1,0 +1,2 @@
+# This is a sample props.conf file. NEVER CHANGE THIS FILE!
+# Further information: https://docs.splunk.com/Documentation/Splunk/9.2.1/Admin/Propsconf

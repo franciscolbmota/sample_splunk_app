@@ -1,16 +1,31 @@
 # sample_splunk_app
 
 # Overview
-GTE_test is a sample Splunk application. Please, customize accordingly.
+splunk_sample_app is a sample Splunk application. Please, customize accordingly.
 
 ## Installation
-To install GTE_test, follow these steps:
+To install splunk_sample_app, follow these steps:
 
-Download the GTE_test from the repository.
-Compact file in a .tgz format.
+Create a folder with the name that you prefer (i.e: PGATOUR_admin_app)
+Download the content from the repository inside this folder.
+Compact the folder (i.e: PGATOUR_admin_app) in a .tgz format.
 Log in to your Splunk instance with an administrative account.
 Navigate to the "Manage Apps" page.
-Click on "Install app from file" and upload the GTE_test package.
+Click on "Install app from file" and upload the app (i.e: PGATOUR_admin_app) package.
+
+
+## Configuration
+Navigate to the local folder and create or edit configuration files as needed.
+Update inputs.conf to define data inputs.
+Update props.conf and transforms.conf to define data parsing and transformations.
+Use savedsearches.conf to define any saved searches, reports, or alerts.
+
+## Usage
+Access the app from the Splunk web interface.
+Use the provided dashboards and reports to analyze your data.
+Modify and extend the app as needed by updating the configuration files and adding custom searches, dashboards, and reports.
+Support
+For support, please contact [Your Support Contact] or visit [Your Support URL].
 
 ## Default Folders and Their Uses
 
@@ -51,15 +66,3 @@ Usage: Customize the navigation bar of the app here.
 Purpose: Stores XML view files for the app's dashboards.
 Usage: Define and customize the app's dashboards and views in this folder.
 
-## Configuration
-Navigate to the local folder and create or edit configuration files as needed.
-Update inputs.conf to define data inputs.
-Update props.conf and transforms.conf to define data parsing and transformations.
-Use savedsearches.conf to define any saved searches, reports, or alerts.
-
-## Usage
-Access the app from the Splunk web interface.
-Use the provided dashboards and reports to analyze your data.
-Modify and extend the app as needed by updating the configuration files and adding custom searches, dashboards, and reports.
-Support
-For support, please contact [Your Support Contact] or visit [Your Support URL].

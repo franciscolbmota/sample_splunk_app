@@ -1,25 +1,8 @@
 <nav search_view="search">
-
-	<!-- Change "app_homedashboard" to object name of your home dashboard  -->
-    <view name="app_homedashboard" />
-	
-    <!-- Change "app_dashboard1"  -->
-    <view name="app_dashboard1"/>
-
-    <!-- Use the collection element to create a list of items -->
-    <collection label="Menu name">
-        <!-- Add as many dashboards to the list or copy collections how many times is needed-->
-        <view name="app_dashboard2" />
-        <view name="app_dashboard3" />
-
-        <!-- This is a nested sub_menu. Add a nested list or copy collections how many times is needed -->
-        <collection label="app_menu_name">
-            <view name="app_dashboard4" />
-            <view name="app_dashboard5" />
-        </collection>
-		
-    </collection>
-	
-	<view name="search" default='true' />
-
+  <view name="search" default='true' />
+  <view name="analytics_workspace" />
+  <view name="datasets" />
+  <view name="reports" />
+  <view name="alerts" />
+  <view name="dashboards" />
 </nav>

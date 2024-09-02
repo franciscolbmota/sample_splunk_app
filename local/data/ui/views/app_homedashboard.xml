@@ -1,0 +1,81 @@
+<form version="1.1" theme="dark" hideSplunkBar="true">
+  <label>PGA Sample App</label>
+  <fieldset submitButton="true" autoRun="false">
+    <input type="time" token="time_token" searchWhenChanged="true">
+      <label>Select the Time Range</label>
+      <default>
+        <earliest>-15m</earliest>
+        <latest>now</latest>
+      </default>
+    </input>
+  </fieldset>
+  <row>
+    <panel>
+      <single>
+        <search>
+          <query>|makeresults
+|eval text="THIS IS A SAMPLE APP"</query>
+          <earliest>-24h@h</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="drilldown">none</option>
+      </single>
+    </panel>
+  </row>
+  <row depends="$alwaysHideCSSPanel$">
+    <panel>
+      <html>
+       <style>
+           .dashboard-body {
+               background: #04346b  !important; 
+            } 
+           .dashboard-panel h2{
+             background: #e50e16 !important;
+             color: White !important;
+             text-align: center !important;
+             font-weight: bold !important;
+             border-top-right-radius: 15px;
+             border-top-left-radius: 15px;
+           }
+           .dashboard-panel{
+             
+             text-align: center !important;
+             font-weight: bold !important;
+             border-radius:15px;
+             border-width: 1px;
+             border-color: #5A4575;
+             border-style: solid;
+           }
+           #radio1 div[data-test="radio-list"]{
+           display: inline;
+          }  
+
+          #radio1 div[data-test="option"]{
+            display: inline;
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px
+          } 
+          #radio1 {
+            width:100%;
+          }
+          #radio2 div[data-test="radio-list"]{
+           display: inline;
+          }  
+
+          #radio2 div[data-test="option"]{
+            display: inline;
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px
+          } 
+          #radio2 {
+            width:100%;
+          }
+       </style>
+       </html>
+    </panel>
+  </row>
+</form>

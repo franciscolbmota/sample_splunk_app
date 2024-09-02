@@ -1,31 +1,41 @@
-# sample_splunk_app
+# pga_splunk_app
 
 # Overview
-splunk_sample_app is a sample Splunk application. Please, customize accordingly.
+pga_sample_app is a sample Splunk application. Please, customize accordingly.
 
 ## Installation
 To install splunk_sample_app, follow these steps:
 
-Create a folder with the name that you prefer (i.e: PGATOUR_admin_app)
-Download the content from the repository inside this folder.
-Compact the folder (i.e: PGATOUR_admin_app) in a .tgz format.
+Create a copy and apply a different name to the folder (recomended a intuitive name, i.e: PGA_security_monitoring or PGA_kubernetes_monitoring)
+Edit $APP_HOME/default/app.conf file
+Rename the label of your app (i.e: "label = PGA_security_monitoring" or PGA_kubernetes_monitoring)
 Log in to your Splunk instance with an administrative account.
 Navigate to the "Manage Apps" page.
-Click on "Install app from file" and upload the app (i.e: PGATOUR_admin_app) package.
-
+Click on "Install app from file" and upload the app (i.e: "label = PGA_security_monitoring" or PGA_kubernetes_monitoring) package.
 
 ## Configuration
-Navigate to the local folder and create or edit configuration files as needed.
-Update inputs.conf to define data inputs.
-Update props.conf and transforms.conf to define data parsing and transformations.
-Use savedsearches.conf to define any saved searches, reports, or alerts.
-
-## Usage
 Access the app from the Splunk web interface.
-Use the provided dashboards and reports to analyze your data.
-Modify and extend the app as needed by updating the configuration files and adding custom searches, dashboards, and reports.
-Support
-For support, please contact [Your Support Contact] or visit [Your Support URL].
+Navigate to Settings > Knowledge > User Interface > Navigation menus > default 
+Edit menus accordingly:
+
+###Add dashboard on menu list
+<view name=“dashboard_id" />
+
+###Set default dashboard 
+<view name=“dashboard_id" default='true' />
+
+###Add link on menu list
+<a href="https://dev.splunk.com/">Splunk Developer Portal</a>
+
+###Add dashboards list as menu option
+<collection label="All dashboards">
+<view source="all" />
+</collection>
+
+###Add category list as menu option
+<collection label="Dashboards (errors)">
+<view source="all" match="error"/>
+</collection>
 
 ## Default Folders and Their Uses
 

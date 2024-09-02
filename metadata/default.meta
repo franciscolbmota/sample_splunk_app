@@ -33,3 +33,46 @@ export = system
 [viewstates]
 access = read : [ * ], write : [ * ]
 export = system
+
+[app/ui]
+version = 9.1.5
+modtime = 1725297409.106607400
+
+[app/launcher]
+version = 9.1.5
+modtime = 1725297409.130098800
+
+[nav/default]
+version = 9.1.5
+modtime = 1725298122.272238700
+
+[views/app_dashboard1]
+owner = admin
+version = 9.1.5
+modtime = 1725297733.774480200
+
+[views/app_dashboard2]
+owner = admin
+version = 9.1.5
+modtime = 1725297778.470494000
+
+[views/app_dashboard3]
+owner = admin
+version = 9.1.5
+modtime = 1725297816.350853400
+
+[views/app_dashboard4]
+owner = admin
+version = 9.1.5
+modtime = 1725297837.222386600
+
+[views/app_dashboard5]
+owner = admin
+version = 9.1.5
+modtime = 1725297899.494105500
+
+[views/app_homedashboard]
+owner = admin
+version = 9.1.5
+modtime = 1725298524.712159500
+
